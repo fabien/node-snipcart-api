@@ -1,6 +1,6 @@
 {
   "name": "@atelierfabien/snipcart-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "implementation of the snipcart api",
   "main": "index.js",
   "scripts": {
