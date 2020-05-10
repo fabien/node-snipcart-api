@@ -1,5 +1,11 @@
 const lib = require('./lib');
 
-const snipcart = Object.assign({}, lib);
+const Snipcart = function Snipcart(apiKey, config) {
+  Object.assign(this.config, config || {});
+  this.set('apiKey', apiKey);
+  this.api.config = this.config;
+};
 
-module.exports = snipcart;
+Object.assign(Snipcart.prototype, lib);
+
+module.exports = Snipcart;

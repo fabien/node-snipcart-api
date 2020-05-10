@@ -13,13 +13,10 @@ npm i --save snipcart-api
 ## Configuration
 
 The api requires a [Secret API Key](https://docs.snipcart.com/merchant-dashboard/account-configurations#2-api-keys).
-This can be set by using an environment variable `SECRET_API_KEY`
-
-OR
 
 ```js
-const snipcart = require('snipcart-api');
-snipcart.configure('SECRET_API_KEY', SECRET_API_KEY);
+const Snipcart = require('snipcart-api');
+const snipcart = new Snipcart(process.env.SNIPCART_SECRET_API_KEY);
 ```
 
 ## Making API Calls
@@ -125,4 +122,3 @@ snipcart.api.refunds
 ## Notes
 
 - Pull requests are welcome.
-
